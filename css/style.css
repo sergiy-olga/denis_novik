@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+display: grid;
+grid-template-rows: 1fr minmax(100px,auto) 1fr;
+grid-template-columns: 1fr minmax(auto,1110px) 1fr;
+}
+.header{
+    display: grid;
+    grid-column: 2/3;
+    grid-template-columns: 1fr minmax(auto,944px) 1fr;
+}
+.nav{
+    grid-column: 2/3;
+    width: 100%;
+
+
+}
+.nav ul {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+ul li{
+    align-items: center;
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    font-family: 'Gilroy-Bold';
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+
+color: #828282;
+
+}
+.nav ul li .home{
+    font-family: 'Gilroy-Bold';
+font-size: 18px;
+line-height: 22px;
+color: #070707;
+}
